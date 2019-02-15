@@ -13,11 +13,17 @@ Page({
     userNam: '',
     tel: '',
     yzm:'',
-    p_bg_img: '',
+    p_bg_img: 'http://webqiniu.51fth.com/tupian/shangjia/20190123165956687.jpg',
     f_list: [],
     dt_list: [],
     msg_list: [],
     dt_len: '',
+
+    imgUrls: [],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000
   },
 
   /**
@@ -37,10 +43,11 @@ Page({
       url: app.IPurl1 + '/project/projectdetile/' + that.data.pid,
       dataType: 'json',
       success: function (res) {
-         console.log(res.data)
+          console.log(res.data)
         if (res.data.code == 200) {
           that.setData({
-            p_bg_img: res.data.retvalue.img
+            p_bg_img: res.data.retvalue.img,
+            imgUrls: res.data.retvalue.listpicture
           })
         } else {
           wx.showToast({
@@ -54,12 +61,12 @@ Page({
       url: app.IPurl1 + '/function/selectfunction/' + that.data.pid,
       dataType: 'json',
       success: function (res) {
-        console.log(res.data.retvalue)
+        // console.log(res.data.retvalue)
         if (res.data.code == 200) {
           that.setData({
             f_list: res.data.retvalue
           })
-          console.log(that.data.f_list)
+          // console.log(that.data.f_list)
         } else {
           wx.showToast({
             title: res.data.errdes,
@@ -73,13 +80,13 @@ Page({
       data: { type: 1, project_id: that.data.pid},
       dataType: 'json',
       success: function (res) {
-        console.log(res.data.retvalue)
+        // console.log(res.data.retvalue)
         if (res.data.code == 200) {
           that.setData({
             dt_list: res.data.retvalue.list,
             dt_len: res.data.retvalue.allRow
           })
-          console.log(that.data.dt_list)
+          // console.log(that.data.dt_list)
         } else {
           wx.showToast({
             title: res.data.errdes,
@@ -91,12 +98,12 @@ Page({
       url: app.IPurl1 + '/message/typehoutaimassage/1/' + that.data.pid,
       dataType: 'json',
       success: function (res) {
-        console.log(res.data.retvalue)
+        // console.log(res.data.retvalue)
         if (res.data.code == 200) {
           that.setData({
             msg_list: res.data.retvalue
           })
-          console.log(that.data.msg_list)
+          // console.log(that.data.msg_list)
         } else {
           wx.showToast({
             title: res.data.errdes,
@@ -135,7 +142,7 @@ Page({
     setTimeout(() => {
       wx.stopPullDownRefresh({
         complete: function (res) {
-          console.log(111)
+          console.log("下拉")
         }
       },1000)
     })
@@ -145,7 +152,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function() {
-      console.log(222)
+    console.log("页面上拉触底")
   },
 
   /**
@@ -252,12 +259,12 @@ Page({
       url: app.IPurl1 + '/function/selectfunction/' + that.data.pid,
       dataType: 'json',
       success: function (res) {
-        console.log(res.data.retvalue)
+        // console.log(res.data.retvalue)
         if (res.data.code == 200) {
           that.setData({
             f_list: res.data.retvalue
           })
-          console.log(that.data.f_list)
+          // console.log(that.data.f_list)
         } else {
           wx.showToast({
             title: res.data.errdes,
@@ -277,7 +284,7 @@ Page({
             dt_list: res.data.retvalue.list,
             dt_len: res.data.retvalue.allRow
           })
-          console.log(that.data.dt_list)
+          // console.log(that.data.dt_list)
         } else {
           wx.showToast({
             title: res.data.errdes,
@@ -289,12 +296,12 @@ Page({
       url: app.IPurl1 + '/message/typehoutaimassage/1/' + that.data.pid,
       dataType: 'json',
       success: function (res) {
-        console.log(res.data.retvalue)
+        // console.log(res.data.retvalue)
         if (res.data.code == 200) {
           that.setData({
             msg_list: res.data.retvalue
           })
-          console.log(that.data.msg_list)
+          // console.log(that.data.msg_list)
         } else {
           wx.showToast({
             title: res.data.errdes,

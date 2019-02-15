@@ -1,12 +1,24 @@
 <!--pages/fino/fino.wxml-->
 <view class="neirong" id="p_xq_list">
   <view class="p_header">
-    <image src="{{p_bg_img}}" alt="" class="p_bg" />
+    <swiper indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}"
+            interval="{{interval}}"
+            duration="{{duration}}"
+            circular='true'
+            indicator-active-color="#fff">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="p_bg"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- <image src="{{p_bg_img}}" alt="" class="p_bg" /> -->
     <view class="p_nav">
       <view class="p_item" wx:for="{{f_list}}" wx:for-index="idx" data-id="{{item.id}}" data-type="{{item.type}}">
-      <navigator url="./project_item/project_item?id={{item.id}}&f_type={{item.type}}&uid={{uid}}&pid={{pid}}" hover-class="navigator-hover">
-        <image class="p_item_0" src="{{item.route}}" alt="" />
-        <text>{{item.name}}</text>
+        <navigator url="./project_item/project_item?id={{item.id}}&f_type={{item.type}}&uid={{uid}}&pid={{pid}}" hover-class="navigator-hover">
+          <image class="p_item_0" src="{{item.route}}" alt="" />
+          <text>{{item.name}}</text>
         </navigator>
       </view>
     </view>
@@ -34,11 +46,11 @@
     <view class="ly_tit">
       <text class="ly_t_l">精选留言</text>
       <navigator class="ly_t_r" url="./project_msg/project_msg?&pid={{pid}}&f_type=1&uid={{uid}}">
-      <text>写留言</text>
+        <text>写留言</text>
       </navigator>
     </view>
     <view class="ly_con" wx:for="{{msg_list}}">
-      <image src="{{item.userimg}}" alt="" class="ly_peo"/>
+      <image src="{{item.userimg}}" alt="" class="ly_peo" />
       <view class="ly_r">
         <view class="ly_name">{{item.username}}</view>
         <view class="ly_txt">{{item.content}}</view>
