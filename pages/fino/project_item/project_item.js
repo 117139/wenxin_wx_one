@@ -35,6 +35,9 @@ Page({
    */
   onReady: function () {
     var that=this;
+    wx.showLoading({
+      title: '加载中',
+    })
     wx.request({
       url: app.IPurl1 + '/function/functiondetile/' + this.data.id,
       dataType: 'json',
@@ -56,6 +59,7 @@ Page({
             })
           }
         } else {
+          wx.hideLoading();
           wx.showToast({
             title: res.data.errdes,
           })

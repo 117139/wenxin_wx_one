@@ -30,6 +30,9 @@ Page({
    */
   onReady: function () {
     var that = this;
+    wx.showLoading({
+      title: '加载中',
+    })
     //获取content
     wx.request({
       url: app.IPurl1 + '/trends/detiletrends/' + that.data.id,
@@ -45,6 +48,7 @@ Page({
           //   con: res.data.retvalue.content
           // })
         } else {
+          wx.hideLoading();
           wx.showToast({
             title: res.data.errdes,
           })
