@@ -49,14 +49,15 @@ Page({
             that.setData({
               v_list: res.data.retvalue.detiles == null ? '[]' : res.data.retvalue.detiles
             })
+            wx.hideLoading();
           } else if (that.data.type == 1) {
             var article = res.data.retvalue.function.content
             console.log(article)
             WxParse.wxParse('article', 'html', article, that, 5);
             wx.hideLoading();
-            that.setData({
-              con: res.data.retvalue.function.content
-            })
+            // that.setData({
+            //   con: res.data.retvalue.function.content
+            // })
           }
         } else {
           wx.hideLoading();
