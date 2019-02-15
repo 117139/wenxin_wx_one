@@ -1,0 +1,100 @@
+{
+  "pages": [
+    
+    "pages/default/index/index",
+    "pages/default/books/books",
+    "pages/default/logs/logs",
+
+    "pages/index1/index1",
+    "pages/index1/wxui/wxui",
+    "pages/index1/swiper/swiper",
+    "pages/index1/icon/icon",
+    "pages/index1/progress/progress",
+    "pages/index1/picker/picker",
+    "pages/index1/radio/radio",
+    "pages/index1/form/form",
+    "pages/index1/feedback/feedback",
+    "pages/index1/video/video",
+    "pages/index1/lbs/lbs",
+    "pages/index1/canvas/canvas",
+    "pages/index1/sy/sy",
+    "pages/index1/Chooimage/Chooimage",
+    "pages/index1/request/request",
+    "pages/index1/file/file",
+    "pages/index1/websocket/websocket",
+    "pages/index1/audio/audio",
+    "pages/index1/stroage/stroage",
+    "pages/index1/location/location",
+    "pages/index1/sbxx/sbxx",
+    "pages/index1/navigation/navigation",
+    "pages/index1/animation/animation",
+    "pages/index1/canvans/canvans","pages/index1/end1/end1",
+    "pages/index1/end/end",
+    
+    
+    
+    "pages/test/test",
+
+    "pages/test_page/test_page",
+    "pages/firstPage/first",
+    "pages/login/login",
+    
+
+    "pages/fino/fino",
+    "pages/fino/index/index",
+    "pages/fino/project_item/project_item",
+    "pages/fino/project_dt_xq/project_dt_xq",
+    "pages/fino/project_msg/project_msg",
+    "pages/fino/register/register"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ddd",
+    "navigationBarTitleText": "快递查询",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#34b457",
+    "borderStyle": "white",
+    "backgroundColor": "#ddd",
+    "position":"bottom",
+    "list": [
+      {
+        "pagePath": "pages/default/index/index",
+        "text": "tx",
+        "iconPath": "images/1.png",
+        "selectedIconPath": "images/2.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "文章",
+        "iconPath": "images/1.png",
+        "selectedIconPath": "images/2.png"
+      },
+      {
+        "pagePath": "pages/fino/fino",
+        "text": "菲诺",
+        "iconPath": "images/1.png",
+        "selectedIconPath": "images/2.png"
+      },
+      {
+        "pagePath": "pages/default/logs/logs",
+        "text": "logs",
+        "iconPath": "images/1.png",
+        "selectedIconPath": "images/2.png"
+      },
+      {
+        "pagePath": "pages/index1/index1",
+        "text": "index1",
+        "iconPath": "images/1.png",
+        "selectedIconPath": "images/2.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

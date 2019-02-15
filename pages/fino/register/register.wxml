@@ -1,0 +1,24 @@
+<!--pages/fino/register/register.wxml-->
+<view class="view">
+
+    <view class="vbox">
+        <view class="vtit">姓名</view>
+        <input class="vinr" placeholder="请输入您的名字" name="name" bindinput="uname"/>
+    </view>
+
+    <view class="vbox">
+        <view class="vtit">手机号</view>
+        <input class="vinr" bindinput="telphone" name="tel" placeholder="请输入手机号"/>
+    </view>
+
+    <view class="vbox">
+        <view class="vtit">验证码</view>
+        <input class="vinr sryzm" placeholder="请输入验证码" name="yzm" bindinput="sryzm" />
+        <view class="hyzm" bindtap="hqyzm" data-kg='0'>获取验证码</view>
+    </view>
+
+</view>
+<view class="nextbtn" bindtap="nextjump()">
+    <text>注册</text>
+</view>
+

@@ -1,0 +1,11 @@
+
+<view class='container'>
+  <navigator wx:for="{{wenz}}"  wx:for-item="item" wx:for-index="idx" url='../test_page/test_page?id={{idx}}'>
+    <!-- <view bindtap='itemClick'> -->
+    <view class='list'>
+      <view class='user-motto' style='text-align:left'>{{item.title}}</view>
+      <br/>
+      <view class='user-motto' style='text-align:right'>{{item.zz}}</view>
+    </view>
+  </navigator>
+</view>

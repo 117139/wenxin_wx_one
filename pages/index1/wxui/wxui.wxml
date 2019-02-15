@@ -1,0 +1,30 @@
+<view class='contaier'>
+  <scroll-view scroll-y='true' 
+  style='height:200px'
+   bindscrolltoupper='scrollToUpper' 
+   bindscrolltolower='scrollTolower' 
+   bindscroll='scroll'
+   upper-threshold='100'
+   lower-threshold='100'
+   scroll-top='{{st}}'
+   scroll-into-view="{{ys}}">
+    <view id='green' class='scroll-view-item bc_green'>1</view>
+    <view id='red' class='scroll-view-item bc_red'>2</view>
+    <view id='yellow' class='scroll-view-item bc_yellow'>3</view>
+    <view id='red1' class='scroll-view-item bc_red'>4</view>
+    <view id='yellow1' class='scroll-view-item bc_yellow'>5</view>
+    <view id='red2' class='scroll-view-item bc_red'>6</view>
+    <view id='yellow2' class='scroll-view-item bc_yellow'>7</view>
+    <view id='blue' class='scroll-view-item bc_blue'>8</view>
+  </scroll-view>
+  <button bindtap="click">上</button>
+  <button bindtap="click1">下</button>
+  <button id="g1" data-hi='green' bindtap='ck'>1</button>
+  <button data-hi='red' bindtap='ck'>2</button>
+  <button data-hi='yellow' bindtap='ck'>3</button>
+  <button data-hi='red1' bindtap='ck'>4</button>
+  <button data-hi='yellow1' bindtap='ck'>5</button>
+  <button data-hi='red2' bindtap='ck'>6</button>
+  <button data-hi='yellow2' bindtap='ck'>7</button>
+  <button data-hi='blue' bindtap='ck'>8</button>
+</view>

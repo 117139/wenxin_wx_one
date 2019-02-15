@@ -1,0 +1,39 @@
+/* pages/index1/index1.wxss */
+
+navigator {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.user{
+  margin-top: 10px;
+ display: flex;
+ /* justify-content: center; */
+ align-items:center;
+}
+.user image{
+  width: 100rpx;
+  height: 100rpx;
+  /* border-radius: 50%; */
+}
+.user text{
+  margin-left: 10rpx;
+  font-size: 38rpx;
+}
+.sex{
+  font-size: 34rpx;
+  color: #ddd;
+}
+.sex1{
+  /* color: blue; */
+}
+.sex2{
+  /* color: pink; */
+}
+
+.testBtn {
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}

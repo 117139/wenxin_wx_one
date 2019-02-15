@@ -1,0 +1,6 @@
+/* pages/index1/Chooimage/Chooimage.wxss */
+image{
+  width: '';
+  height: '';
+  
+}

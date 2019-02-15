@@ -1,0 +1,89 @@
+/* pages/fino/project_dt_xq/project_dt_xq.wxss */
+[v-cloak] {
+            display: none;
+        }
+	    .sign_in{
+	    	width:100%;
+	    	height:50px;
+	    	text-align: center;
+	    	line-height: 50px;
+			position:fixed;
+			left:0;
+			bottom:0;
+			background-color:#0fc352;
+			font-size:18px;
+			color:#fff; 
+			z-index:9999;
+	    }
+		.ly_list{
+			margin-top:20px;
+			border-top:1px solid #d2d2d2;
+			padding:20px 15px; 
+		}
+		.ly_tit{
+			font-size: 16px;
+		}
+		.ly_t_l{
+			color:#6D6D6D;
+		}
+		.ly_t_r{
+			float:right;
+			color:#0fc352;
+		}
+		.ly_con{
+			display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            margin-top:25px;
+		}
+		.ly_peo{
+			display: inline-block;
+			width:38px;
+			height:39px;
+			border-radius: 50%;
+		}
+		.ly_r{
+			margin-left:7px;
+		}
+		.ly_name{
+			font-size:14px;
+			color:#6D6D6D;
+			line-height: 20px;
+		}
+		.ly_txt{
+			font-size:16px;
+			color:#2f2f2f;
+		}
+		.hx{
+			padding:0 46px;
+			color:#E1E1E1;
+			text-align: center;
+		}
+		.neirong{
+	    	padding:10px 0 80px;
+	    }
+	    .con img{
+	    	display:block;
+	    	width: 100%;
+	    	margin:10px auto;
+	    }
+	    .con p{
+	    	padding:0 12px;
+	    }
+	    .w_dt{
+			padding:20px;
+			text-align: center;
+		}
+		.wdt{
+			width: 80%;
+			height:30%;
+			margin:0 auto;
+			display: inline-block;
+		}
+		.wdt_xx{
+			margin-top:20px;
+			font-size: 20px;
+			text-align: center;
+			color:#9e9e9e;
+		}

@@ -1,0 +1,41 @@
+/* pages/fino/project_item/project_item.wxss */
+.sign_in{
+	    	width:100%;
+	    	height:50px;
+	    	text-align: center;
+	    	line-height: 50px;
+			position:fixed;
+			left:0;
+			bottom:0;
+			background-color:#0fc352;
+			font-size:18px;
+			color:#fff; 
+			z-index:9999;
+	    }
+	    .neirong{
+	    	padding:10px 0 80px;
+	    }
+	    .tw_con img{
+	    	display:block;
+	    	width: 100%;
+	    }
+	    .tw_con p{
+	    	padding:0 12px;
+	    }
+	    .sp_con{
+	    	padding:0 14px;
+	    }
+	    .sp_desc{
+	    	font-size:14px;
+	    	color:#2f2f2f;
+	    	margin-top:10px;
+	    }
+	    .v_box{
+	    	width:100%;
+	    	margin-bottom:24px;
+	    	position:relative;
+	    	z-index:1;
+	    }
+	    .zzz{
+	    	width:100%;
+	    }

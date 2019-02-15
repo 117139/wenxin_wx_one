@@ -1,0 +1,14 @@
+<!--pages/fino/project_item/project_item.wxml-->
+<import src="../../../vendor/wxParse/wxParse.wxml" />
+<view id="f_xq" v-cloak>
+		<view class="neirong">  
+			<rich-text class="tw_con" wx:if="{{type==1}}"><template is="wxParse" data="{{wxParseData:article.nodes}}" /></rich-text>  
+			<view class="sp_con" wx:else>
+				<view class="v_box" wx:for="{{v_list}}">
+					<video src="{{item.route}}" :height="height" width="100%" controls="controls" class="zzz" preload="auto" poster="{{item.route}}?vframe/jpg/offset/1/w/'+width+'/h/'+height">您的浏览器不支持播放该视频！</video>
+					<view class="sp_desc">{{item.content}}</view>
+				</view>	
+			</view>
+		</view>
+	    <view class="sign_in" onclick="open_sign_up()">我要报名</view>
+	</view>

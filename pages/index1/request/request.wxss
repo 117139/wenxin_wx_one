@@ -1,0 +1,25 @@
+/* pages/index1/request/request.wxss */
+view{
+  font-size: 24rpx;
+}
+.tr{
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid #ddd;
+  line-height: 60rpx;
+}
+.td{
+  border: 1px solid #ddd
+}
+.td1{
+  flex: 1;
+}
+.td2{
+ width: 100rpx;
+}
+.td3{
+  flex: 1;
+}
+.td4{
+  width: 150rpx;
+}

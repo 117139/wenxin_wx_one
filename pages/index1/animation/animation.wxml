@@ -1,0 +1,14 @@
+<!--pages/index1/animation/animation.wxml-->
+<text>pages/index1/animation/animation.wxml</text>
+<view class='imgq' bindtap='bindtap' animation='{{animation}}'>
+  <view class='imgq1' animation='{{animation}}'>
+    <view class='imgq2' animation='{{animation}}'>
+      <view class='imgq3' animation='{{animation}}'>
+        <view class='imgq4' animation='{{animation}}'>
+          <view class='imgq5' animation='{{animation}}'>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

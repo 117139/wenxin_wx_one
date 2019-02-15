@@ -1,0 +1,10 @@
+<!--pages/fino/project_msg/project_msg.wxml-->
+<view id="msg" v-cloak>
+  <view class="form_box">
+    <textarea name="" class="txt" placeholder="留言将由筛选后显示，对所有人可见" maxlength="200" bindinput="jishu" bindpropertychange="jishu"></textarea>
+    <view class="zishu">{{txt.length}}/200</view>
+  </view>
+  <view class="btn">
+    <view class="msg_btn" bindtap="save_msg">留 言</view>
+  </view>
+</view>

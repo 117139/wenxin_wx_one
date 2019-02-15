@@ -1,0 +1,6 @@
+<!--pages/index1/feedback/feedback.wxml-->
+<view>
+<button bindtap='ck'>showActionSheet</button>
+<button bindtap='showModal'>showModal</button>
+<button bindtap='showToast'>showToast</button>
+</view>

@@ -1,0 +1,4 @@
+<!--pages/index1/stroage/stroage.wxml-->
+<text>pages/index1/stroage/stroage.wxml</text>
+<button bindtap='storage'>1111</button>
+<button bindtap='restorage'>remove</button>

@@ -1,0 +1,35 @@
+<!--pages/index1/request/request.wxml-->
+<text>pages/index1/request/request.wxml</text>
+<button bindtap='bindview'>request</button>
+<view class="layui-table">
+  <!-- th -->
+  <view class='tr'>
+    <view class='td td1'>流程名称</view>
+    <view class='td td2'>当前状态</view>
+    <!-- <th>审批环节</th>
+      <th>当前办理人</th> -->
+    <view class='td td3'>接收时间</view>
+    <view class='td td4'>操作</view>
+  </view>
+
+  <view class='tr' wx:for="{{me_list}}">
+  <!-- td -->
+    <view class='td td1'>{{item.proName}}</view>
+    <view class='td td2'>
+      <span class="layui-btn layui-btn-mini">
+        {{item.state}}
+      </span>
+    </view>
+    <!-- <td>{{item.taskName}}</td>
+      <td>{{item.taskAssignee}}</td> -->
+    <view class='td td3'>{{item.startTime}}</view>
+    <view class='td td4'>
+      <a>查看
+      </a>
+      <a>流程
+      </a>
+    </view>
+  </view>
+
+
+</view>

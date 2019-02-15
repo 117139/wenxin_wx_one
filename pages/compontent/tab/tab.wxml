@@ -1,0 +1,5 @@
+<template name="tab">
+  <view>
+    <text>tab</text>
+  </view>
+</template>

@@ -1,0 +1,5 @@
+<!--pages/index1/canvans/canvans.wxml-->
+<view class='container'>
+<canvas canvas-id='f_canvas'></canvas>
+
+</view>

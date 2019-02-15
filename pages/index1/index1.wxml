@@ -1,0 +1,105 @@
+<!--pages/index1/index1.wxml-->
+<!-- swiper -->
+<view>
+   <!-- <swiper indicator-dots='false'
+          interval='3000'
+          autoplay='true' 
+          indicator-color='rgba(225, 225,225, .9)'
+          circular='true'
+          bindchange='change'>
+    <swiper-item wx:for="{{imgUrls}}">
+      <image src="{{item}}" class="slide-image" style="width:100%;height:150px"/>
+    </swiper-item>
+  </swiper>  -->
+
+</view>
+
+<view class='user' wx:if='{{userimg}}'>
+  <image src="{{userimg}}" class='tximg'></image>
+  <text>{{username}}</text>
+  <text class='sex' wx:if='{{usersex==0}}'>性别：保密</text>
+  <text class='sex sex1' wx:elif='{{usersex==1}}'>性别：男</text>
+  <text class='sex sex2' wx:else>性别：女</text>
+</view>
+<button wx:else open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+
+<navigator url='./end/end'>
+  <view class='testBtn'>end</view>
+</navigator>
+<navigator url='./wxui/wxui'>
+  <view class='testBtn'>wxui</view>
+</navigator>
+<navigator url='./swiper/swiper'>
+  <view class='testBtn'>swiper轮播图</view>
+</navigator>
+<navigator url='./icon/icon'>
+  <view class='testBtn'>icon</view>
+</navigator>
+<navigator url='./progress/progress'>
+  <view class='testBtn'>progress进度条</view>
+</navigator>
+<navigator url='./picker/picker'>
+  <view class='testBtn'>picker选择器</view>
+</navigator>
+<navigator url='./radio/radio'>
+  <view class='testBtn'>radio单选</view>
+</navigator>
+<navigator url='./form/form'>
+  <view class='testBtn'>form表单</view>
+</navigator>
+<navigator url='./feedback/feedback'>
+  <view class='testBtn'>feedback交互</view>
+</navigator>
+<navigator url='./video/video'>
+  <view class='testBtn'>video视频</view>
+</navigator>
+<navigator url='./lbs/lbs'>
+  <view class='testBtn'>lbs</view>
+</navigator>
+<navigator url='./canvas/canvas'>
+  <view class='testBtn'>canvas</view>
+</navigator>
+<navigator url='./sy/sy'>
+  <view class='testBtn'>sy</view>
+</navigator>
+<navigator url='./request/request'>
+  <view class='testBtn'>request</view>
+</navigator>
+<navigator url='./Chooimage/Chooimage'>
+  <view class='testBtn'>Chooimage选择图片</view>
+</navigator>
+<navigator url='./file/file'>
+  <view class='testBtn'>file文件上传下载</view>
+</navigator>
+<navigator url='./websocket/websocket'>
+  <view class='testBtn'>websocket</view>
+</navigator>
+<navigator url='./audio/audio'>
+  <view class='testBtn'>audio</view>
+</navigator>
+<navigator url='./stroage/stroage'>
+  <view class='testBtn'>stroage</view>
+</navigator>
+<navigator url='./location/location'>
+  <view class='testBtn'>location</view>
+</navigator>
+<navigator url='./sbxx/sbxx'>
+  <view class='testBtn'>sbxx</view>
+</navigator>
+<navigator url='./navigation/navigation'>
+  <view class='testBtn'>navigation</view>
+</navigator>
+<navigator url='./animation/animation'>
+  <view class='testBtn'>animation</view>
+</navigator>
+<navigator url='./canvans/canvans'>
+  <view class='testBtn'>canvans</view>
+</navigator>
+<!-- <navigator url='../fino/fino'>
+  <view class='testBtn'>fino</view>
+</navigator> -->
+<!-- <navigator url='./canvans/canvans'> -->
+  <view class='testBtn' bindtap='sys'>
+    sys
+  </view>
+<!-- </navigator> -->

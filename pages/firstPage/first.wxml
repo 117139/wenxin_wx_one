@@ -1,0 +1,10 @@
+<!--pages/firstPage/first.wxml-->
+<include src='../templates/header.wxml' />
+<button type='default' hover-class='other-button-hover'>default</button>
+<button type='primary'>primary</button>
+<view wx:if="{{show}}">{{text}}1</view>
+<view wx:else>{{text}}2</view>
+<view wx:for="{{news}}" wx:for-item='items' wx:for-index='ix'>{{ix}}{{items}}</view>
+<button type='add' bindtap='btnClick'>{{button}}</button>
+<import src='../templates/foot'/>
+<template is='f1' data="{{text:'111111111'}}"></template>

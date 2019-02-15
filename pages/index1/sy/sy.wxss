@@ -1,0 +1,76 @@
+/* pages/index1/sy/sy.wxss */
+image{
+  width: 100%;
+  height: 100%
+}
+.selection{
+  padding: 20rpx 0;
+  border-bottom:4px solid #ddd;
+}
+.header{
+  height:60rpx;
+  border-left:4px solid limegreen;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 10rpx;
+  margin-bottom: 10rpx;
+}
+.text-all{
+  color: green;
+  font-size: 26rpx;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content-item{
+  height: 250rpx;
+  width: 45%;
+  margin: 2px;
+  background: green;
+  position: relative;
+}
+.content-item-text{
+  color: #fff;
+  width:98%;
+  height: 125rpx;
+  position: absolute;
+  bottom: 0;
+  background: -webkit-linear-gradient(bottom,rgba(0, 0, 0, .9),rgba(0, 0, 0, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 1% 1%;
+}
+.list-item{
+  width: 100%;
+  height: 500rpx;
+}
+.list-item-images{
+  height:300rpx;
+  position: relative;
+}
+.avatar{
+  width: 80rpx;
+  height:80rpx;
+  border-radius: 50%;
+  position: absolute;
+  right: 30rpx;
+  bottom: -40rpx;
+}
+.list-item-text{
+  height: 200rpx;
+  margin-top: 20rpx;
+  padding: 0 10rpx
+}
+.list-item-text-title{
+  font-weight: 700;
+  margin-bottom:10rpx;
+}
+.list-item-text-content{
+  font-size: 12px;
+  color: #999
+}

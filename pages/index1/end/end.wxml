@@ -1,0 +1,25 @@
+<!--pages/index1/end/end.wxml-->
+<view style='display:flex;flex-direction:column;'>
+  <navigator url='../end1/end1'>
+    <view class='xtit' wx:for="{{tit}}" wx:key=''>
+      <view style='display:flex;align-items:center;'>
+        <image src='/images/end/ch.png' class='tx' />
+        <text>昵称</text>
+      </view>
+
+      <view class='title'>
+        <text>title</text>
+      </view>
+      <view class='inner'>
+        <text>innerinnerinnerinnerinnerinnerinnerinnerinnerinnerinnerinnerinner</text>
+      </view>
+
+      <template is="tab" data="" />
+      <view class='con'>
+        <text>10条回复</text>
+        <text>赞</text>
+      </view>
+    </view>
+  </navigator>
+</view>
+<import src="/pages/compontent/tab/tab.wxml" />

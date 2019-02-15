@@ -1,0 +1,91 @@
+<!--pages/default/books/books.wxml-->
+<!-- <text>pages/default/books/books.wxml</text> -->
+<view class='wrap'>
+  <view class="navbar navbar-default navbar-fixed-top">
+    <view class="container1 clearfix">
+      <view class="navbar-header clearfix">
+        <button bindtap='zk1' type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">2k小说</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <navigator class="navbar-brand" href="/">2k小说</navigator>
+      </view>
+      <view id="navbar" class="navbar-collapse collapse" style="{{zk11==false?'height:0rpx':'height:auto'}}">
+        <view class="nav navbar-nav">
+          <view class="navitem myinfo">
+
+            <view href="/userdetail.php" id="myinfo2">欢迎你！1171390035</view>
+          </view>
+          <view class="bookcase" nav="shelf">
+            <a href="/modules/article/bookcase.php">
+              <span class="glyphicon glyphicon-book" aria-hidden="true"></span> 书架</a>
+          </view>
+          <view class="navitem" nav="cat_1">
+            <a href="/list/1-1.html">玄幻 </a>
+          </view>
+          <view class="navitem" nav="cat_2">
+            <a href="/list/2-1.html">仙侠 </a>
+          </view>
+          <view class="navitem" nav="cat_3">
+            <a href="/list/3-1.html">言情 </a>
+          </view>
+          <view class="navitem" nav="cat_4">
+            <a href="/list/4-1.html">历史 </a>
+          </view>
+          <view class="navitem" nav="cat_5">
+            <a href="/list/5-1.html">网游 </a>
+          </view>
+          <view class="navitem" nav="cat_6">
+            <a href="/list/6-1.html">科幻 </a>
+          </view>
+          <view class="navitem" nav="cat_7">
+            <a href="/list/7-1.html">恐怖 </a>
+          </view>
+          <view class="navitem" nav="cat_8">
+            <a href="/list/8-1.html">其他 </a>
+          </view>
+          <view class="{{zk22==false?'dropdown':'dropdown open'}}">
+            <!-- <view class="dropdown open" wx:else> -->
+            <view bindtap='zk2' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">榜单
+              <span class="caret"></span>
+            </view>
+            <view class="dropdown-menu">
+              <view class='bd'>
+                总排行榜
+              </view>
+              <view class='bd'>
+                本周排行榜
+              </view>
+              <view class='bd'>
+                当月排行榜
+              </view>
+              <view class='bd'>
+                总推荐榜
+              </view>
+              <view class='bd'>
+                本周推荐榜
+              </view>
+              <view class='bd'>
+                当月推荐榜
+              </view>
+            </view>
+          </view>
+        </view>
+        <!-- <form class="navbar-form navbar-right hidden-sm hidden-xs" name="articlesearch" action="/modules/article/search.php" method="post">
+        <input type="text" class="form-control form-search" placeholder="请输入搜索关键词" name="searchkey">
+        <input type="submit" class="form-control btn-search" value="搜索">
+      </form> -->
+      </view>
+      <!--/.nav-collapse -->
+    </view>
+  </view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section">
+      <input hidden="hidden" name="type" value="articlename"/>
+      <input name="s" placeholder="请输入搜索关键词" auto-focus />
+      <button class='btn' form-type="submit">搜索</button>
+    </view>
+  </form>
+</view>

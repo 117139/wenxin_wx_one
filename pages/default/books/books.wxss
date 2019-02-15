@@ -1,0 +1,256 @@
+/* pages/default/books/books.wxss */
+
+.wrap {
+  padding-top: 120rpx;
+  overflow-x: hidden;
+}
+
+.navbar-default {
+  background-color: #1abc9c;
+  border: none;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000
+}
+
+.navbar-header {
+  margin-left: -15rpx;
+  margin-right: -15rpx;
+}
+
+.container1 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clearfix:after {
+  clear: both;
+  display: table;
+  content: " ";
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.myinfo {
+  display: block;
+  width: 150px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#navbar .myinfo #myinfo2 {
+  text-align: center;
+  color: #00ff40;
+  position: relative;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar-brand {
+  float: left;
+  height: 80rpx;
+  padding: 15rpx 15rpx;
+  font-size: 18prx;
+  line-height: 80rpx;
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 19rpx 20rpx;
+  margin-top: 18rpx;
+  margin-right: 30rpx;
+  margin-bottom: 18rpx;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 8rpx;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 8rpx;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 52rpx;
+  height: 5rpx;
+  border-radius: 2rpx;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.section {
+  /* width: 100%; */
+  border: 1px solid #ddd;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 34rpx;
+  margin: 40rpx;
+  box-sizing: border-box;
+}
+
+input {
+  flex: 1;
+  padding: 0px 10rpx;
+  line-height: 80rpx;
+  min-height: 80rpx;
+  font-size: 44rpx;
+}
+
+.btn {
+  width: 150rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  min-height: 80rpx;
+  font-size: 44rpx;
+  /* padding:5rpx 10rpx; */
+  background: #1abc9c;
+  color: #fff;
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bookcase, .navitem {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  color: white;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  line-height: 40rpx;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid\9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.navbar-nav .open .dropdown-menu {
+  position: static;
+  float: none;
+  width: auto;
+  margin-top: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: block;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu .bd {
+  clear: both;
+  font-weight: 400;
+  color: #777;
+  white-space: nowrap;
+  line-height: 40rpx;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+  height: 0rpx;
+  max-height: 680rpx;
+  overflow-y: auto;
+  border-top: 1px solid #e7e7e7;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-left: 15px;
+}
+
+.navbar-collapse::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+
+.navbar-collapse::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #535353;
+}
+
+.navbar-collapse::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #ededed;
+}

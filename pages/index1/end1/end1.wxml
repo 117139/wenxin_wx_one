@@ -1,0 +1,17 @@
+<!--pages/index1/end1/end1.wxml-->
+<view style='display:flex;flex-direction:column;padding:10px;'>
+  <view style='background:#c2c2c2;padding:5px;'>
+    <view><text style='font-size:20px'>标题</text></view>
+    <view><text style='font-size:14px;margin:10px 0;'>作者</text></view>
+    <view><text style='font-size:17px'>内容</text></view>
+    <view style='display:flex;justify-content:space-between;'><text style='font-size:14px'>回复数目</text><text style='font-size:14px'>节点</text></view>
+  </view>
+  <view>
+    <view><text>用户名</text></view>
+    <view><text>内容</text></view>
+  </view>
+  <view>
+    <image src="/images/avatar.png" />
+    <view>text1</view>
+  </view>
+</view>

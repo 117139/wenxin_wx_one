@@ -1,0 +1,5 @@
+<!--pages/index1/websocket/websocket.wxml-->
+<text>pages/index1/websocket/websocket.wxml</text>
+<button>开启</button>
+<button>发送</button>
+<button>关闭</button>

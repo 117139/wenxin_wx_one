@@ -1,0 +1,5 @@
+<!--pages/test_page/test_page.wxml-->
+<view class='container log-list'>
+  <text>这里是文章详情</text>
+  {{wenz[aritcleid]}}
+</view>

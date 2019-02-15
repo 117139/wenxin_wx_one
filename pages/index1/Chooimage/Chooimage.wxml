@@ -1,0 +1,8 @@
+<!--pages/index1/Chooimage/Chooimage.wxml-->
+<text>pages/index1/Chooimage/Chooimage.wxml</text>
+<button bindtap='choimg'>选择并上传</button>
+<view style='text-align:center'>
+ <image wx:for="{{img}}" wx:for-item="img1" src='{{img1}}' bindtap='previewimg'></image>
+  {{img1}}
+</view>
+<!-- <button>preview</button> -->

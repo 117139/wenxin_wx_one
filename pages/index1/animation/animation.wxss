@@ -1,0 +1,37 @@
+/* pages/index1/animation/animation.wxss */
+.imgq{
+  width:200px;
+  height:200px;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+}
+.imgq1{
+  width:180px;
+  height:180px;
+  border: 1px solid #ddd;
+  margin: 10px auto;
+}
+.imgq2{
+  width:160px;
+  height:160px;
+  border: 1px solid #ddd;
+  margin: 10px auto;
+}
+.imgq3{
+  width:140px;
+  height:140px;
+  border: 1px solid #ddd;
+  margin: 10px auto;
+}
+.imgq4{
+  width:120px;
+  height:120px;
+  border: 1px solid #ddd;
+  margin: 10px auto;
+}
+.imgq5{
+  width:100px;
+  height:100px;
+  border: 1px solid #ddd;
+  margin: 10px auto;
+}

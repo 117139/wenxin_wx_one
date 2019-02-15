@@ -1,0 +1,55 @@
+<!--pages/fino/fino.wxml-->
+<view class="neirong" id="p_xq_list">
+  <view class="p_header">
+    <image src="{{p_bg_img}}" alt="" class="p_bg" />
+    <view class="p_nav">
+      <view class="p_item" wx:for="{{f_list}}" wx:for-index="idx" data-id="{{item.id}}" data-type="{{item.type}}">
+      <navigator url="./project_item/project_item?id={{item.id}}&f_type={{item.type}}&uid={{uid}}&pid={{pid}}" hover-class="navigator-hover">
+        <image class="p_item_0" src="{{item.route}}" alt="" />
+        <text>{{item.name}}</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+  <view class="p_content">
+    <view class="p_tit">项目动态</view>
+    <view class="w_dt" wx:if="{{dt_len==0}}">
+      <!-- <image src="../../themes/images/wdt.png" alt="" class="wdt"> -->
+      <view class="wdt_xx">抱歉，暂无动态</view>
+    </view>
+    <view class="p_list" v-else>
+      <view class="project" wx:for="{{dt_list}}" data-id="{{item.id}}" bindtap="open_dynamic">
+        <navigator url="./project_dt_xq/project_dt_xq?id={{item.id}}&f_id={{pid}}&uid={{uid}}" hover-class="navigator-hover">
+          <image src="{{item.img}}" alt="" class="p_img" />
+          <view class="content">
+            <view class="p_title">{{item.title}}</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+  <view class="ly_list">
+    <view class="ly_tit">
+      <text class="ly_t_l">精选留言</text>
+      <navigator class="ly_t_r" url="./project_msg/project_msg?&pid={{pid}}&f_type=1&uid={{uid}}">
+      <text>写留言</text>
+      </navigator>
+    </view>
+    <view class="ly_con" wx:for="{{msg_list}}">
+      <image src="{{item.userimg}}" alt="" class="ly_peo"/>
+      <view class="ly_r">
+        <view class="ly_name">{{item.username}}</view>
+        <view class="ly_txt">{{item.content}}</view>
+      </view>
+    </view>
+    <view class="hx">
+      <text class="line">—————</text> ·
+      <text class="line">—————</text>
+    </view>
+  </view>
+</view>
+<view class="sign_in" bindtap="open_sign_up">
+  <text>我要报名</text>
+</view>

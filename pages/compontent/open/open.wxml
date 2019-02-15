@@ -1,0 +1,8 @@
+<template name="open">
+  <view>
+    <navigator url="../../default/books/books" open-type="redirect" hover-class="navigator-hover">
+
+      欢迎使用
+    </navigator>
+  </view>
+</template>

@@ -1,0 +1,6 @@
+<!--pages/index1/audio/audio.wxml-->
+<text>pages/index1/audio/audio.wxml</text>
+<button bindtap='stop'>stop</button>
+<button bindtap='s1'>stop</button>
+<button bindtap='stop'>stop</button>
+<button bindtap='stop'>stop</button>

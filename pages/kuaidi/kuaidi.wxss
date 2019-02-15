@@ -1,0 +1,45 @@
+/* pages/kuaidi/kuaidi.wxss */
+
+.ipt_ydh {
+  border: 1rpx solid red;
+  width: 90%;
+  margin: 5%;
+}
+
+.flex_box {
+  display: flex;
+  align-items: stretch;
+}
+
+.num_tit {
+  width: 30rpx;
+  background-repeat: repeat-y;
+  background-size: 30rpx;
+  margin: 0 20rpx;
+  text-align: cetner;
+  position: relative;
+}
+
+.num_tit_in {
+  width: 30rpx;
+  height: 30rpx;
+  background: #ededed;
+  border-radius: 50%;
+  position: absolute;
+  top: 30rpx;
+}
+.num_bg{
+  width:2px;
+  height:100%;
+  border:1px solid #ededed;
+  box-sizing: border-box;
+  margin-left: -1px;
+  position: absolute;
+  left: 50%;
+}
+
+.remark {
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}

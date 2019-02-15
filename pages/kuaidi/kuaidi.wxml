@@ -1,0 +1,31 @@
+<!--pages/kuaidi/kuaidi.wxml-->
+<select style="width=100%;height:30px;">
+  <option wx:for='{{coms}}' wx:for-item='it2'>{{it.com}}</option>
+</select>
+<picker bindchange="bindPickerChange" value="4" range="{{coms1}}">
+  <view class="picker">
+    <input placeholder='输入快递公司' bindinput="input" class='ipt_ydh' value='{{coms[index].com}}' disabled/>
+  </view>
+</picker>
+<input placeholder='输入运单号' bindinput="input1" class='ipt_ydh' />
+<button type='primary' bindtap='btnClick'>查询</button>
+<scroll-view scroll-y='true' style='height:300px;dispaly:flex;'>
+  <view class='flex_box' wx:for='{{listnew}}' wx:for-item='it' wx:key="{{index}}">
+    <view wx:if="{{index==0}}" class='num_tit'>
+      <view class='num_bg' style="top:30rpx"></view>
+      <view class='num_tit_in' style='margin-top:0'></view>
+    </view>
+    <view wx:elif="{{index==listnew.length-1}}" class='num_tit' style="height:60rpx">
+      <view class='num_bg'></view>
+      <view class='num_tit_in'></view>
+    </view>
+    <view wx:else class='num_tit' style="">
+      <view class='num_bg'></view>
+      <view class='num_tit_in'></view>
+    </view>
+    <view class='remark'>
+      <view style='font-size:24rpx'>{{it.remark}}</view>
+      <view style='font-size:22rpx'>{{it.datetime}}</view>
+    </view>
+  </view>
+</scroll-view>

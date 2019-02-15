@@ -1,0 +1,13 @@
+<!--pages/index1/swiper/swiper.wxml-->
+<view>
+  <swiper indicator-dots='false'
+          interval='3000'
+          autoplay='true' 
+          indicator-color='rgba(225, 225,225, .9)'
+          circular='true'
+          bindchange='change'>
+    <swiper-item wx:for="{{imgUrls}}">
+      <image src="{{item}}" class="slide-image" style="width:100%;height:150px"/>
+    </swiper-item>
+  </swiper>
+</view>

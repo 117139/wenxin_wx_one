@@ -1,0 +1,16 @@
+/* pages/test/test.wxss */
+.container{
+  align-items:stretch;
+  text-align:center;
+}
+.navigator{
+  width:100%;
+}
+.list{
+  width:95%;
+  padding: 10rpx;
+  box-sizing: border-box;
+  margin: 10rpx auto;
+   height:400rpx; 
+  border:1px solid #ddd;
+}

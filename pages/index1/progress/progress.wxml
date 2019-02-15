@@ -1,0 +1,3 @@
+<!--pages/index1/progress/progress.wxml-->
+<progress percent='20' show-info></progress>
+<progress percent='80' active='true'></progress>

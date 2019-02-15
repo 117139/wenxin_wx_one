@@ -1,0 +1,33 @@
+<!--pages/fino/project_dt_xq/project_dt_xq.wxml-->
+<import src="../../../vendor/wxParse/wxParse.wxml" />
+<view id="dt_xq" v-cloak>
+  <view class="neirong">
+    <view class="w_dt" wx:if="{{con==null}}">
+      <view class="wdt_xx">抱歉，暂无动态内容</view>
+      
+    </view>
+    <view class="con" wx:else><template is="wxParse" data="{{wxParseData:article.nodes}}" /></view>
+    <view class="ly_list">
+      <view class="ly_tit">
+        <text class="ly_t_l">精选留言</text>
+        <navigator class="ly_t_r" url="../project_msg/project_msg?id={{id}}&pid={{pid}}&f_type=2&uid={{uid}}">
+          <text>写留言</text>
+        </navigator>
+      </view>
+      <view class="ly_con" wx:for="{{msg_list}}">
+        <image src="{{item.userimg}}" alt="" class="ly_peo" />
+        <view class="ly_r">
+          <view class="ly_name">{{item.username}}</view>
+          <view class="ly_txt">{{item.content}}</view>
+        </view>
+      </view>
+      <view class="hx">
+        <text class="line">—————</text> ·
+        <text class="line">—————</text>
+      </view>
+    </view>
+  </view>
+  <navigator url="'../sign_in/sign_in?pid={{pid}}&uid={{uid}}">
+    <view class="sign_in">我要报名</view>
+  </navigator>
+</view>

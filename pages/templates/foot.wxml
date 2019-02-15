@@ -1,0 +1,3 @@
+<template name='f1'>
+  <view>foot</view>{{text}}
+</template>  
