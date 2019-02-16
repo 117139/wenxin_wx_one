@@ -37,80 +37,11 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function() {
+    wx.showLoading({
+      title: '',
+    })
     var that =this
-    /*banner */
-    wx.request({
-      url: app.IPurl1 + '/project/projectdetile/' + that.data.pid,
-      dataType: 'json',
-      success: function (res) {
-          console.log(res.data)
-        if (res.data.code == 200) {
-          that.setData({
-            p_bg_img: res.data.retvalue.img,
-            imgUrls: res.data.retvalue.listpicture
-          })
-        } else {
-          wx.showToast({
-            title: res.data.errdes,
-          })
-        }
-      }
-    })
-    /*biaoqian */
-    wx.request({
-      url: app.IPurl1 + '/function/selectfunction/' + that.data.pid,
-      dataType: 'json',
-      success: function (res) {
-        // console.log(res.data.retvalue)
-        if (res.data.code == 200) {
-          that.setData({
-            f_list: res.data.retvalue
-          })
-          // console.log(that.data.f_list)
-        } else {
-          wx.showToast({
-            title: res.data.errdes,
-          })
-        }
-      }
-    })
-    /*dt */
-    wx.request({
-      url: app.IPurl1 + '/trends/selecttrends',
-      data: { type: 1, project_id: that.data.pid},
-      dataType: 'json',
-      success: function (res) {
-        // console.log(res.data.retvalue)
-        if (res.data.code == 200) {
-          that.setData({
-            dt_list: res.data.retvalue.list,
-            dt_len: res.data.retvalue.allRow
-          })
-          // console.log(that.data.dt_list)
-        } else {
-          wx.showToast({
-            title: res.data.errdes,
-          })
-        }
-      }
-    })
-    wx.request({
-      url: app.IPurl1 + '/message/typehoutaimassage/1/' + that.data.pid,
-      dataType: 'json',
-      success: function (res) {
-        // console.log(res.data.retvalue)
-        if (res.data.code == 200) {
-          that.setData({
-            msg_list: res.data.retvalue
-          })
-          // console.log(that.data.msg_list)
-        } else {
-          wx.showToast({
-            title: res.data.errdes,
-          })
-        }
-      }
-    })
+    that.jiazai()
   },
 
   /**
@@ -237,15 +168,16 @@ Page({
   },
   jiazai:function(){
     var that = this
-    /*banner */
+    /*banner*swiper */
     wx.request({
       url: app.IPurl1 + '/project/projectdetile/' + that.data.pid,
       dataType: 'json',
       success: function (res) {
-        console.log(res.data)
+        // console.log(res.data)
         if (res.data.code == 200) {
           that.setData({
-            p_bg_img: res.data.retvalue.img
+            // p_bg_img: res.data.retvalue.img
+            imgUrls: res.data.retvalue.listpicture
           })
         } else {
           wx.showToast({
@@ -259,7 +191,7 @@ Page({
       url: app.IPurl1 + '/function/selectfunction/' + that.data.pid,
       dataType: 'json',
       success: function (res) {
-        // console.log(res.data.retvalue)
+        //  console.log(res.data.retvalue)
         if (res.data.code == 200) {
           that.setData({
             f_list: res.data.retvalue
@@ -278,7 +210,7 @@ Page({
       data: { type: 1, project_id: that.data.pid },
       dataType: 'json',
       success: function (res) {
-        console.log(res.data.retvalue)
+        // console.log(res.data.retvalue)
         if (res.data.code == 200) {
           that.setData({
             dt_list: res.data.retvalue.list,
@@ -296,7 +228,7 @@ Page({
       url: app.IPurl1 + '/message/typehoutaimassage/1/' + that.data.pid,
       dataType: 'json',
       success: function (res) {
-        // console.log(res.data.retvalue)
+        console.log(res.data.retvalue)
         if (res.data.code == 200) {
           that.setData({
             msg_list: res.data.retvalue
@@ -309,5 +241,6 @@ Page({
         }
       }
     })
+    wx.hideLoading()
   }
 })
